@@ -1,0 +1,54 @@
+/* 1.Write a program which takes 3 parameters, first parameter is an array of whole numbers, the second parameter is a number and third parameter/input is a number.
+  
+Return true if the sum of any element of an array with the number provided is equal to 3rd input provided. if not returns false.
+
+
+Note: Cover all the edge case
+
+  
+  
+  
+   Example1: 
+     input1: [1,10,2,-3,4,5]
+    input2: 3
+    input3: 5
+     output: true;
+    
+    
+    Example2: 
+     input1: [1,10,2,3,4,5,99]
+    input2: 1
+    input3: 1
+    output: false; */
+    
+    //intution------
+    
+    //1st p is 0
+    //2nd p is 1
+    //3rd p is either 0 or number or other
+    
+    
+    //condition is sum(p1[]+p2==p3) return true else false
+    
+    
+    
+    let p1=[1,10,2,3,4,5,99];
+    let p2=1;
+    let p3=1;
+    let sum=0;
+    
+if((p1.length||p2)>0){
+
+/* console.log("if condition:",true) */;}
+
+for(let i=0;i<=p1.length;i++){   
+			sum=p1[i]+p2;
+if (sum==p3){ 
+console.log(true);
+break;
+}else{
+console.log(false);
+break;
+}
+ }
+    
