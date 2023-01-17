@@ -1,0 +1,61 @@
+/* 2.Write a program to find if a given string input is a pallindrome or not?
+
+Note: A pallindrome is a word which is same when reversed.
+
+Example1: input: 'coding'
+          output: false
+
+Example2: input: 'level'
+          output: true */
+          
+          
+         /*  let text='coding';
+                  let test=text.split('');
+          console.log(test);
+          
+          let join1=test.join('');
+          
+          console.log(join1); */
+
+
+
+//solved method 1 begins here
+          
+          function palindrome(str){
+          
+          return str===str.split('').reverse().join('');
+          
+          }
+          
+          console.log(palindrome('coding'));
+        console.log(palindrome('level'));
+
+
+
+
+
+ //solved method 1 closes here
+          
+          
+          
+ //solved method 2 begins here
+          
+             let input= 'level';
+             
+             let left=[...input];
+             /* console.log("left:",left); */
+             
+             let palin=left.reverse();
+             /* console.log("palin:",palin); */
+             
+             let join11=palin.join('');
+             
+             /* console.log(join11); */             
+            
+            
+              if(input==join11)
+             console.log(true);
+             else
+             console.log(false);
+             
+ //solved method 2 closes here
